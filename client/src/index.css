@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl sm:text-4xl font-bold;
+  }
+  h2 {
+    @apply text-xl sm:text-2xl font-semibold;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+
+  fieldset {
+    @apply flex flex-col gap-1;
+  }
+
+  label {
+    @apply text-sm font-medium;
+  }
+
+  input,
+  textarea {
+    @apply text-gray-500 text-sm py-2 px-4 border border-gray-300 rounded-md;
+  }
+
+  button {
+    @apply py-2 px-4 rounded-md;
+  }
+}
+
+#landing-orb-1 {
+  position: fixed;
+  height: 514px;
+  left: 37.43%;
+  right: 27.01%;
+  top: -406px;
+  background: rgba(240, 131, 43, 0.5);
+  filter: blur(150px);
+}
+
+#landing-orb-2 {
+  position: fixed;
+  height: 514px;
+  left: 81.88%;
+  right: 5.43%;
+  top: 541px;
+  background: rgba(170, 217, 217, 0.8);
+  filter: blur(150px);
+}
+
+#landing-orb-3 {
+  position: fixed;
+  height: 514px;
+  left: -22.5%;
+  right: 86.94%;
+  top: 511px;
+  background: rgba(240, 131, 43, 0.5);
+  filter: blur(150px);
+}
+
+.tooltip-active {
+  opacity: 1;
+  transition: all 250ms linear;
+}
+
+.tooltip-hidden {
+  opacity: 0;
+  transition: all 250ms ease-out 1s;
+}
+
+html, body, :root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
